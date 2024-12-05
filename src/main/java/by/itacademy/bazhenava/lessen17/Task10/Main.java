@@ -14,10 +14,10 @@ public class Main {
         airlines.add(new Airline("Минск", "M780", "Boeing 777", "10:00", new String[]{"Пн", "Ср"}));
 
         for (int i = 0; i < airlines.size(); i++) {
-            Airline b = airlines.get(i);//books[i]
-            String message = "Airline: destination=" + b.getDestination() + ", FlightNumber=" + b.getFlightNumber() +
-                    ", aircraftType=" + b.getAircraftType() + ", departureTime=" + b.getDepartureTime() +
-                    ", daysOfWeek=" + b.getDaysOfWeek();
+            Airline a = airlines.get(i);//books[i]
+            String message = "Airline: destination=" + a.getDestination() + ", FlightNumber=" + a.getFlightNumber() +
+                    ", aircraftType=" + a.getAircraftType() + ", departureTime=" + a.getDepartureTime() +
+                    ", daysOfWeek=" + a.getDaysOfWeek();
             System.out.println(i + " - " + message);
         }
 
