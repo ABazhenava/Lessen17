@@ -1,6 +1,7 @@
 package by.itacademy.bazhenava.lessen17.Task10;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Airline {
 
@@ -59,6 +60,21 @@ public class Airline {
 
     public void setDaysOfWeek(String[] daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Airline airline = (Airline) o;
+        return Objects.equals(destination, airline.destination) && Objects.equals(flightNumber, airline.flightNumber) && Objects.equals(aircraftType, airline.aircraftType) && Objects.equals(departureTime, airline.departureTime) && Arrays.equals(daysOfWeek, airline.daysOfWeek);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(destination, flightNumber, aircraftType, departureTime);
+        result = 31 * result + Arrays.hashCode(daysOfWeek);
+        return result;
     }
 
     @Override
