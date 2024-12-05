@@ -7,16 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
         List<Airline> airlines = new ArrayList<>();
-        airlines.add(new Airline("Москва", "MOS888",
-                "Boeing 737", "12:15", new String[]{"Пн", "Вт", "Чт"}));
-        airlines.add(new Airline("Москва", "MOS123",
-                "Boeing 737", "10:00", new String[]{"Пн", "Ср", "Пт"}));
-        airlines.add(new Airline("Калининград", "KA456",
-                "Airbus A320", "14:00", new String[]{"Вт", "Чт", "Вс"}));
-        airlines.add(new Airline("Новосибирск", "HOV789",
-                "Boeing 777", "16:00", new String[]{"Пн", "Ср", "Пт"}));
-        airlines.add(new Airline("Минск", "M780",
-                "Boeing 777", "10:00", new String[]{"Пн", "Ср"}));
+        airlines.add(new Airline("Москва", "MOS888", "Boeing 737", "12:15", new String[]{"Пн", "Вт", "Чт"}));
+        airlines.add(new Airline("Москва", "MOS123", "Boeing 737", "10:00", new String[]{"Пн", "Ср", "Пт"}));
+        airlines.add(new Airline("Калининград", "KA456", "Airbus A320", "14:00", new String[]{"Вт", "Чт", "Вс"}));
+        airlines.add(new Airline("Новосибирск", "HOV789", "Boeing 777", "16:00", new String[]{"Пн", "Ср", "Пт"}));
+        airlines.add(new Airline("Минск", "M780", "Boeing 777", "10:00", new String[]{"Пн", "Ср"}));
 
         for (int i = 0; i < airlines.size(); i++) {
             Airline b = airlines.get(i);//books[i]
